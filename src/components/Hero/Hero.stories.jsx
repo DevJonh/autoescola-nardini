@@ -3,6 +3,7 @@ import { text } from "@storybook/addon-knobs";
 
 import Hero from ".";
 import Heading from "../Heading";
+import Button from "../Button";
 
 import bgCar from "../../stories/assets/bg-car.jpg";
 import bgCar2 from "../../stories/assets/bg-car2.jpg";
@@ -34,5 +35,8 @@ export const withList = () => (
       <li>Lorem Ipsum has been the industry's standard</li>
       <li>Lorem Ipsum has been the industry's standard</li>
     </ul>
+    <Button variant="outlined" color="primary">
+      Matricule-se agora
+    </Button>
   </Hero>
 );
