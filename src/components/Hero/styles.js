@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 import { BreakPoints, breakAt } from "../../styles/BreakPoints";
 
-const collorYellow = "#ffc107";
-
 export const Content = styled.div`
   ul {
     list-style: none;
@@ -13,7 +11,7 @@ export const Content = styled.div`
   li {
     ::before {
       content: "\\2713\\0020";
-      color: ${collorYellow};
+      color: ${({ theme }) => theme.colors.primary.main};
     }
   }
 

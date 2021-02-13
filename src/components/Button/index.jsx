@@ -39,6 +39,16 @@ const getDarkColor = ({ theme, color }) => {
       return "#5a6268";
   }
 };
+const getColorText = ({ theme, color }) => {
+  switch (color) {
+    case ButtonColors.primary:
+      return theme.colors.primary.text;
+    case ButtonColors.danger:
+      return theme.colors.danger.text;
+    default:
+      return "#212121";
+  }
+};
 
 const ButtonStyles = styled.button`
   font-size: 1rem;
@@ -48,7 +58,7 @@ const ButtonStyles = styled.button`
   cursor: pointer;
   background-color: ${getColor};
   border: 2px solid ${getColor};
-  color: ${({ theme, color }) => theme.colors.primary.text};
+  color: ${getColorText};
   transition: 0.4s;
 
   &:disabled {

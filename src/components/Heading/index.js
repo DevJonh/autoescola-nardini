@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const collorYellow = "#ffc107";
-
 const Heading = styled.div`
   h1,
   h2,
@@ -19,7 +17,7 @@ const Heading = styled.div`
       position: absolute;
       left: 0;
       bottom: -3px;
-      background-color: ${collorYellow};
+      background-color: ${({ theme }) => theme.colors.primary.main};
       height: 5px;
       width: 70px;
     }

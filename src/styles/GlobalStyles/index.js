@@ -5,8 +5,6 @@ import { Helmet } from "react-helmet";
 
 import { breakAt, BreakPoints } from "../BreakPoints";
 
-const collorYellow = "#ffc107";
-
 const GlobalStyle = createGlobalStyle`
   html{
     font-family: "Poppins", sans-serif;
@@ -38,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 2px;
     
     strong{
-      color: ${collorYellow};
+      color: ${({ theme }) => theme.colors.primary.main};
     }
   }
 
