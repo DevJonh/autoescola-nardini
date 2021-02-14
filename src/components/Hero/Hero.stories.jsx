@@ -9,7 +9,7 @@ import bgCar from "../../stories/assets/bg-car.jpg";
 import bgCar2 from "../../stories/assets/bg-car2.jpg";
 
 const hero = {
-  title: "Components/Hero",
+  title: "Components/Molecules/Hero",
   component: Hero,
 };
 

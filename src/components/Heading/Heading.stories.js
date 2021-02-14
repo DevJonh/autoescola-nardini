@@ -3,7 +3,7 @@ import React from "react";
 import Heading from ".";
 
 const heading = {
-  title: "Components/Heading",
+  title: "Components/Atoms/Heading",
   component: Heading,
 };
 

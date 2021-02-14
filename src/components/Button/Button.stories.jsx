@@ -5,7 +5,7 @@ import { actions } from "@storybook/addon-actions";
 import Button from ".";
 
 const button = {
-  title: "Components/Button",
+  title: "Components/Atoms/Button",
   component: Button,
 };
 export default button;
