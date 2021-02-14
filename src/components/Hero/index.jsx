@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Container from "../Container";
 
 import { RootContainer, Content } from "./styles.js";
+import Section from "../Section";
 
 const Hero = ({ image, children }) => {
   return (

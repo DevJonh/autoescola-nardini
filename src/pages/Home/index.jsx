@@ -7,8 +7,10 @@ import Heading from "../../components/Heading";
 import Button from "../../components/Button";
 import Grid from "../../components/Grid";
 import Feature from "../../components/Feature";
+import Footer from "../../components/Footer";
 
 import bgCar from "../../assets/bg-car.jpg";
+import videoCar from "../../assets/Car.mp4";
 import Section from "../../components/Section";
 
 const Home = () => (
@@ -45,6 +47,39 @@ const Home = () => (
         </Feature>
       </Grid>
     </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Conheça nossos Serviços</h2>
+      </Heading>
+    </Section>
+    <Section>
+      <Grid md={2}>
+        <div className="section-video">
+          <Heading>
+            <h2>Nardini Auto Escola</h2>
+          </Heading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            distinctio quisquam consequatur laborum illum sequi, vel labore!
+            Consequuntur illum asperiores cumque odit maxime reprehenderit
+            impedit velit id, recusandae nesciunt alias.
+          </p>
+
+          <div>
+            <Button color="primary">Saiba mais</Button>
+          </div>
+        </div>
+        <div>
+          <video src={videoCar} width="100%" autoPlay loop />
+        </div>
+      </Grid>
+    </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Duvidas Importantes</h2>
+      </Heading>
+    </Section>
+    <Footer />
   </>
 );
 
