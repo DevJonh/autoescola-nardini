@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { RootContainer, Content, Container } from "./styles.js";
+import Container from "../Container";
+
+import { RootContainer, Content } from "./styles.js";
 
 const Hero = ({ image, children }) => {
   return (

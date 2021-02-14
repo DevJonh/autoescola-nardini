@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-import { BreakPoints, breakAt } from "../../styles/BreakPoints";
-
 export const Content = styled.div`
+  display: inline-block;
   ul {
     list-style: none;
     padding-left: 0;
@@ -30,18 +29,4 @@ export const RootContainer = styled.div`
 
   color: #fff;
   padding: 100px 0;
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  padding: 0 16px;
-
-  ${breakAt(BreakPoints.sm)} {
-    padding: 0 24px;
-  }
-  ${breakAt(BreakPoints.xl)} {
-    max-width: 1140px;
-    padding: 0;
-    margin: 0 auto;
-  }
 `;

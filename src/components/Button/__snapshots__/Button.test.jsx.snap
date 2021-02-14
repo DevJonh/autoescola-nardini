@@ -13,6 +13,7 @@ exports[`renders with color danger 1`] = `
   color: #212121;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: 20px;
 }
 
 .c0:disabled {
@@ -46,6 +47,7 @@ exports[`renders with color default 1`] = `
   color: #212121;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: 20px;
 }
 
 .c0:disabled {
@@ -79,6 +81,7 @@ exports[`renders with color primary 1`] = `
   color: #212121;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: 20px;
 }
 
 .c0:disabled {
@@ -112,6 +115,7 @@ exports[`renders with color primary and variant link 1`] = `
   color: #212121;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: 20px;
 }
 
 .c0:disabled {
@@ -160,6 +164,7 @@ exports[`renders with color primary and variant outlined 1`] = `
   color: #212121;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: 20px;
 }
 
 .c0:disabled {
@@ -206,6 +211,7 @@ exports[`renders with variant default 1`] = `
   color: #212121;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: 20px;
 }
 
 .c0:disabled {
@@ -239,6 +245,7 @@ exports[`renders with variant link 1`] = `
   color: #212121;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: 20px;
 }
 
 .c0:disabled {
@@ -287,6 +294,7 @@ exports[`renders with variant outlined 1`] = `
   color: #212121;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: 20px;
 }
 
 .c0:disabled {

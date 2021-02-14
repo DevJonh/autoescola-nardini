@@ -40,7 +40,8 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.(jsx|js)",
-      "!src/**/*.stories.(js|jsx)"
+      "!src/**/*.stories.(js|jsx)",
+      "!src/index.js"
     ]
   },
   "browserslist": {

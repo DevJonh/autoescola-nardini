@@ -61,6 +61,8 @@ const ButtonStyles = styled.button`
   color: ${getColorText};
   transition: 0.4s;
 
+  margin-top: 20px;
+
   &:disabled {
     opacity: 0.6;
     cursor: initial;
