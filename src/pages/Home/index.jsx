@@ -8,10 +8,44 @@ import Button from "../../components/Button";
 import Grid from "../../components/Grid";
 import Feature from "../../components/Feature";
 import Footer from "../../components/Footer";
+import ProductGrid from "../../components/ProductGrid";
 
 import bgCar from "../../assets/bg-car.jpg";
 import videoCar from "../../assets/Car.mp4";
 import Section from "../../components/Section";
+
+const products = [
+  {
+    title: "1ª Habilitação Carro e Moto",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
+    img: bgCar,
+  },
+  {
+    title: "1ª Habilitação Carro",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
+    img: bgCar,
+  },
+  {
+    title: "1ª Habilitação Moto",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
+    img: bgCar,
+  },
+  {
+    title: "Mudança de Categoria",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
+    img: bgCar,
+  },
+  {
+    title: "Aulas Avulsas",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
+    img: bgCar,
+  },
+];
 
 const Home = () => (
   <>
@@ -51,6 +85,7 @@ const Home = () => (
       <Heading>
         <h2>Conheça nossos Serviços</h2>
       </Heading>
+      <ProductGrid products={products} />
     </Section>
     <Section>
       <Grid md={2}>

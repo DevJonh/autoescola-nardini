@@ -134,7 +134,8 @@ exports[`renders with color primary and variant link 1`] = `
   color: #ffc107;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  padding: auto 0;
+  padding: 12px 0;
+  outline: none;
 }
 
 .c1:hover:enabled {
@@ -264,7 +265,8 @@ exports[`renders with variant link 1`] = `
   color: #757575;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  padding: auto 0;
+  padding: 12px 0;
+  outline: none;
 }
 
 .c1:hover:enabled {

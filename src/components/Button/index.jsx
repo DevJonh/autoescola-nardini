@@ -91,7 +91,8 @@ const ButtonLink = styled(ButtonStyles)`
   border: none;
   color: ${getLinkText};
   transition: 0.4s;
-  padding: auto 0;
+  padding: 12px 0;
+  outline: none;
 
   &:hover:enabled {
     background-color: transparent;
