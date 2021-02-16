@@ -9,10 +9,12 @@ import Grid from "../../components/Grid";
 import Feature from "../../components/Feature";
 import Footer from "../../components/Footer";
 import ProductGrid from "../../components/ProductGrid";
+import Accordion from "../../components/Accordion";
 
 import bgCar from "../../assets/bg-car.jpg";
 import videoCar from "../../assets/Car.mp4";
 import Section from "../../components/Section";
+import AccordionGroup from "../../components/AccordionGroup";
 
 const products = [
   {
@@ -113,6 +115,26 @@ const Home = () => (
       <Heading>
         <h2>Duvidas Importantes</h2>
       </Heading>
+      <AccordionGroup>
+        <Accordion title="Como eu renovo minha CNH?">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta
+          nihil enim dolore iste aliquam recusandae aut, hic eum, architecto
+          delectus assumenda eveniet ullam pariatur reprehenderit dignissimos!
+          Amet, earum omnis.
+        </Accordion>
+        <Accordion title="Como faço a mudança de categoria?">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta
+          nihil enim dolore iste aliquam recusandae aut, hic eum, architecto
+          delectus assumenda eveniet ullam pariatur reprehenderit dignissimos!
+          Amet, earum omnis.
+        </Accordion>
+        <Accordion title="Fui multado, e agora?">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta
+          nihil enim dolore iste aliquam recusandae aut, hic eum, architecto
+          delectus assumenda eveniet ullam pariatur reprehenderit dignissimos!
+          Amet, earum omnis.
+        </Accordion>
+      </AccordionGroup>
     </Section>
     <Footer />
   </>
