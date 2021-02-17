@@ -12,8 +12,6 @@
     "babel-loader": "^8.1.0",
     "chromatic": "^5.6.2",
     "eslint": "^7.20.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-react": "^7.22.0",
     "init": "^0.1.2",
     "jest-styled-components": "^7.0.3",
     "prop-types": "^15.7.2",
