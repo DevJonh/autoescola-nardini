@@ -1,5 +1,7 @@
 # Auto Escola Nardini
 
+![CircleCI](https://img.shields.io/circleci/build/github/DevJhon/autoescola-nardini)
+
 Projeto criado no curso [React Profissional](http://www.nardiniacademy.com)
 
 Resultado final:
