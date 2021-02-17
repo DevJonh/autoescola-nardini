@@ -6,7 +6,7 @@ orbs:
 jobs:
   setup:
     docker:
-      -image: circleci/node:14.15.5-browsers
+      - image: circleci/node:14.15.5-browsers
     steps:
       - checkout
       - node/install:
