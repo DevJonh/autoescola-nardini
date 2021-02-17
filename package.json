@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@storybook/addon-docs": "^6.1.17",
-    "@storybook/addon-knobs": "^6.1.17",
-    "@storybook/addon-viewport": "^6.1.17",
+    "@storybook/addon-docs": "^6.1.18",
+    "@storybook/addon-knobs": "^6.1.18",
+    "@storybook/addon-viewport": "^6.1.18",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@testing-library/user-event": "^12.7.1",
     "babel-loader": "^8.1.0",
     "chromatic": "^5.6.2",
-    "eslint": "^7.19.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-react": "^7.22.0",
     "init": "^0.1.2",
     "jest-styled-components": "^7.0.3",
     "prop-types": "^15.7.2",
@@ -20,7 +22,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.2",
-    "sb": "^6.1.17",
+    "sb": "^6.1.18",
     "styled-components": "^5.2.1"
   },
   "scripts": {
@@ -32,12 +34,6 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "chromatic --project-token 3128773d1729"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "jest": {
     "collectCoverageFrom": [
@@ -59,13 +55,13 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.1.17",
-    "@storybook/addon-controls": "^6.1.17",
-    "@storybook/addon-essentials": "^6.1.17",
-    "@storybook/addon-links": "^6.1.17",
-    "@storybook/node-logger": "^6.1.17",
-    "@storybook/preset-create-react-app": "^3.1.5",
-    "@storybook/react": "^6.1.17",
+    "@storybook/addon-actions": "^6.1.18",
+    "@storybook/addon-controls": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/node-logger": "^6.1.18",
+    "@storybook/preset-create-react-app": "^3.1.6",
+    "@storybook/react": "^6.1.18",
     "prettier": "^2.2.1"
   }
 }
