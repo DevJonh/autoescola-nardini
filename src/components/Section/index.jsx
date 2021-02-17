@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 import Container from "../Container";
+import { breakAt, BreakPoints } from "../../styles/BreakPoints";
 
 const Content = styled.div`
   padding: 40px 0;
@@ -21,6 +22,10 @@ const Content = styled.div`
     justify-content: space-between;
     align-items: flex-start;
     max-height: 347.63px;
+  }
+
+  ${breakAt(BreakPoints.md)} {
+    padding: 80px 0;
   }
 `;
 
