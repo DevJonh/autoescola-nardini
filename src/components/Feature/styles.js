@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { breakAt, BreakPoints } from "../../styles/BreakPoints";
+
 const getColor = ({ theme }) => theme.colors.primary.main;
 
 const FeatureStyles = styled.div`
@@ -9,6 +11,7 @@ const FeatureStyles = styled.div`
   justify-content: space-between;
   max-width: 270px;
   height: 300px;
+  margin: 0 auto;
 
   & h5 {
     margin: 16px 0;
