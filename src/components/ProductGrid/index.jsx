@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import Grid from "../Grid";
-import Heading from "../Heading";
-import Button from "../Button";
-import Card, { CardBody, CardMedia } from "../Card";
+import Grid from '../Grid';
+import Heading from '../Heading';
+import Button from '../Button';
+import Card, { CardBody, CardMedia } from '../Card';
 
 const ButtonContainer = styled.div`
   margin-top: 40px;
@@ -60,7 +60,7 @@ ProductGrid.protoTypes = {
       img: PropTypes.string,
       title: PropTypes.string,
       summary: PropTypes.string,
-    })
+    }),
   ),
 };
 

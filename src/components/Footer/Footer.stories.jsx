@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Footer from ".";
+import Footer from '.';
 
 const footer = {
-  title: "Components/Organism/Footer",
+  title: 'Components/Organism/Footer',
   component: Footer,
 };
 
 export default footer;
 
-export const usage = () => <Footer></Footer>;
+export const usage = () => <Footer />;

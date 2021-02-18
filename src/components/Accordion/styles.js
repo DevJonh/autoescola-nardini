@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AccordionStyles = styled.div`
   border: 1px solid #e0e0e0;
   border-left: 5px solid ${({ theme }) => theme.colors.primary.main};
   background-color: #fff;
-  margin: ${({ open }) => (open ? "16px 0" : 0)};
+  margin: ${({ open }) => (open ? '16px 0' : 0)};
 
   &:first-child {
     margin-top: 0;

@@ -1,8 +1,8 @@
-import React from "react";
-import { render, screen } from "../../test-utils";
+import React from 'react';
+import { fireEvent } from '@testing-library/react';
+import { render, screen } from '../../test-utils';
 
-import ProductGrid from ".";
-import { fireEvent } from "@testing-library/react";
+import ProductGrid from '.';
 
 const buildProducts = (size) => {
   const result = [];
@@ -19,18 +19,18 @@ describe.each([
   [2, 2],
   [3, 3],
   [4, 3],
-])("with %i products", (size, showOnly) => {
+])('with %i products', (size, showOnly) => {
   test(`show only ${showOnly} items`, () => {
     render(<ProductGrid products={buildProducts(size)} />);
 
-    expect(screen.getAllByRole("heading").length).toBe(showOnly);
+    expect(screen.getAllByRole('heading').length).toBe(showOnly);
   });
 
-  test("show all the products when button is clicked", async () => {
+  test('show all the products when button is clicked', async () => {
     render(<ProductGrid products={buildProducts(size)} />);
 
-    await fireEvent.click(screen.getByText("LISTA COMPLETA DE SERVIÇOS"));
+    await fireEvent.click(screen.getByText('LISTA COMPLETA DE SERVIÇOS'));
 
-    expect(screen.getAllByRole("heading").length).toBe(size);
+    expect(screen.getAllByRole('heading').length).toBe(size);
   });
 });

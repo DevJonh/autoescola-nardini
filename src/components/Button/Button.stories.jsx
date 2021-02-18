@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { actions } from "@storybook/addon-actions";
+import React from 'react';
+import styled from 'styled-components';
+import { actions } from '@storybook/addon-actions';
 
-import Button from ".";
+import Button from '.';
 
 const button = {
-  title: "Components/Atoms/Button",
+  title: 'Components/Atoms/Button',
   component: Button,
 };
 export default button;
@@ -15,7 +15,7 @@ const Toolbar = styled.div`
   justify-content: space-between;
 `;
 
-const events = actions({ onClick: "clicked" });
+const events = actions({ onClick: 'clicked' });
 
 export const usage = () => (
   <div>

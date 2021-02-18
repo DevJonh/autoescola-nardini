@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import Card, { CardBody, CardMedia } from ".";
-import Section from "../Section";
-import Heading from "../Heading";
-import Button from "../Button";
+import Card, { CardBody, CardMedia } from '.';
+import Section from '../Section';
+import Heading from '../Heading';
+import Button from '../Button';
 
-import img from "../../stories/assets/bg-car.jpg";
+import img from '../../stories/assets/bg-car.jpg';
 
 const card = {
-  title: "Components/Atoms/Card",
+  title: 'Components/Atoms/Card',
   component: Card,
   subcomponents: { CardMedia, CardBody },
 };

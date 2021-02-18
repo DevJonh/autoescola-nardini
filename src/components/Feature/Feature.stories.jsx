@@ -1,11 +1,13 @@
-import React from "react";
-import { FaCar, FaKey, FaAccessibleIcon, FaMapMarkedAlt } from "react-icons/fa";
+import React from 'react';
+import {
+  FaCar, FaKey, FaAccessibleIcon, FaMapMarkedAlt,
+} from 'react-icons/fa';
 
-import Feature from ".";
-import Grid from "../Grid";
+import Feature from '.';
+import Grid from '../Grid';
 
 const feature = {
-  title: "Components/Atoms/Feature",
+  title: 'Components/Atoms/Feature',
   component: Feature,
 };
 

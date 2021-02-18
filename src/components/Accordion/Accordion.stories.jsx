@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import Accordion from ".";
-import AccordionGroup from "../AccordionGroup";
+import Accordion from '.';
+import AccordionGroup from '../AccordionGroup';
 
 const accordion = {
-  title: "Components/Atoms/Accordion",
+  title: 'Components/Atoms/Accordion',
   component: Accordion,
 };
 

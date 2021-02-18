@@ -13,12 +13,6 @@ export const ButtonsVariants = {
   link: "link",
 };
 
-const getOutlinedText = (props) =>
-  props.color === ButtonColors.default ? "#212121" : getColor(props);
-
-const getLinkText = (props) =>
-  props.color === ButtonColors.default ? "#757575" : getColor(props);
-
 const getColor = ({ theme, color }) => {
   switch (color) {
     case ButtonColors.primary:
@@ -49,6 +43,12 @@ const getColorText = ({ theme, color }) => {
       return "#212121";
   }
 };
+
+const getOutlinedText = (props) =>
+  props.color === ButtonColors.default ? "#212121" : getColor(props);
+
+const getLinkText = (props) =>
+  props.color === ButtonColors.default ? "#757575" : getColor(props);
 
 const ButtonStyles = styled.button`
   font-size: 1rem;

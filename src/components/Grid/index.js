@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 
-import { breakAt, BreakPoints } from "../../styles/BreakPoints";
+import { breakAt, BreakPoints } from '../../styles/BreakPoints';
 
 const Grid = styled.div`
   display: grid;
@@ -9,31 +9,27 @@ const Grid = styled.div`
 
   grid-template-columns: 1fr;
 
-  ${({ sm }) =>
-    sm &&
-    css`
+  ${({ sm }) => sm
+    && css`
       ${breakAt(BreakPoints.sm)} {
         grid-template-columns: repeat(${({ sm }) => sm}, 1fr);
       }
     `}
 
-  ${({ md }) =>
-    md &&
-    css`
+  ${({ md }) => md
+    && css`
       ${breakAt(BreakPoints.md)} {
         grid-template-columns: repeat(${({ md }) => md}, 1fr);
       }
     `}
-  ${({ lg }) =>
-    lg &&
-    css`
+  ${({ lg }) => lg
+    && css`
       ${breakAt(BreakPoints.lg)} {
         grid-template-columns: repeat(${({ lg }) => lg}, 1fr);
       }
     `}
-  ${({ xl }) =>
-    xl &&
-    css`
+  ${({ xl }) => xl
+    && css`
       ${breakAt(BreakPoints.xl)} {
         grid-template-columns: repeat(${({ xl }) => xl}, 1fr);
       }
