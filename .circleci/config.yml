@@ -18,7 +18,7 @@ jobs:
       - run: yarn lintjs
       - run: yarn lintjsx
       - run: yarn coverage
-      - codecov:
+      - codecov/upload:
           file: coverage/*.json
 
 workflows:
