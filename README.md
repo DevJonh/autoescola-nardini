@@ -2,6 +2,8 @@
 
 ![CircleCI](https://img.shields.io/circleci/build/github/DevJhon/autoescola-nardini)
 
+![Codecov](https://img.shields.io/codecov/c/github/DevJhon/autoescola-nardini)
+
 Projeto criado no curso [React Profissional](http://www.nardiniacademy.com)
 
 Resultado final:
