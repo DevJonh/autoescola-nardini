@@ -11,16 +11,27 @@ jobs:
     steps:
       - checkout
       - node/install-yarn
-      - run: node --version
-      - run: yarn --version
+      - run:
+          name: Show Node version
+          command: |
+            node --version
+            yarn --version
       - node/install-packages:
           pkg-manager: yarn
-      - run: yarn lintjs
-      - run: yarn lintjsx
-      - run: yarn coverage
+      - run:
+          name: Run lint in js
+          command: yarn lintjs
+      - run:
+          name: Run lint in jsx
+          command: yarn lintjsx
+      - run:
+          name: Run unit test with coverage
+          command: yarn coverage
       - codecov/upload:
           file: coverage/*.json
-      - run: yarn chromatic --project-token=${CHROMATIC_TOKEN}
+      - run:
+          name: Publish to Chromatic
+          command: yarn chromatic --project-token=${CHROMATIC_TOKEN}
   versioning:
     docker:
       - image: circleci/node:14.15.5-browsers
