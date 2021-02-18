@@ -20,8 +20,22 @@ jobs:
       - run: yarn coverage
       - codecov/upload:
           file: coverage/*.json
+  versioning:
+    docker:
+      - image: circleci/node:14.15.5-browsers
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-versions DevJonh autoescola-nardini
 
 workflows:
   ci:
     jobs:
       - tests
+      - versioning:
+          filters:
+            branchs:
+              ignore: master
+            tags:
+              ignore: /.*/
