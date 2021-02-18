@@ -1,23 +1,23 @@
-import React from "react";
-import { ThemeProvider as StyledProvider } from "styled-components";
+import React from 'react';
+import { ThemeProvider as StyledProvider } from 'styled-components';
 
 export const ThemeNames = {
-  light: "light",
-  ocean: "ocean",
+  light: 'light',
+  ocean: 'ocean',
 };
 
 const light = {
   colors: {
     primary: {
-      main: "#ffc107",
-      dark: "#c79100",
-      ligth: "#fff350",
-      text: "#212121",
+      main: '#ffc107',
+      dark: '#c79100',
+      ligth: '#fff350',
+      text: '#212121',
     },
     danger: {
-      main: "#ff3d00",
-      dark: "#b22a00",
-      text: "#212121",
+      main: '#ff3d00',
+      dark: '#b22a00',
+      text: '#212121',
     },
   },
 };
@@ -29,10 +29,10 @@ const allThemes = {
     colors: {
       ...light.colors,
       primary: {
-        main: "#2196f3",
-        dark: "#1769aa",
-        ligth: "#4dabf5",
-        text: "#fff",
+        main: '#2196f3',
+        dark: '#1769aa',
+        ligth: '#4dabf5',
+        text: '#fff',
       },
     },
   },
@@ -43,7 +43,7 @@ const ThemeProvider = ({ theme, children }) => (
 );
 
 ThemeProvider.defaultProps = {
-  theme: "light",
+  theme: 'light',
 };
 
 export default ThemeProvider;

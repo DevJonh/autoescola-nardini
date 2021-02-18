@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import { breakAt, BreakPoints } from "../../styles/BreakPoints";
+import { breakAt, BreakPoints } from '../../styles/BreakPoints';
 
 const Container = styled.div`
   width: 100%;

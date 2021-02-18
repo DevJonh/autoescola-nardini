@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import { AccordionStyles, Head, Body } from "./styles";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { MdExpandMore, MdExpandLess } from 'react-icons/md';
+import { AccordionStyles, Head, Body } from './styles';
 
-import { MdExpandMore, MdExpandLess } from "react-icons/md";
-
-const Accordion = ({ title, onChange, open: propsOpen, children }) => {
+const Accordion = ({
+  title, onChange, open: propsOpen, children,
+}) => {
   const [stateOpen, setStateOpen] = useState(false);
 
   const isControlled = propsOpen !== undefined;

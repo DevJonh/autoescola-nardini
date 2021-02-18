@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Home from ".";
+import Home from '.';
 
 const home = {
-  title: "Components/Pages/Home",
+  title: 'Components/Pages/Home',
   component: Home,
 };
 

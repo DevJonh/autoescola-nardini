@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { breakAt, BreakPoints } from "../../styles/BreakPoints";
+import { breakAt, BreakPoints } from '../../styles/BreakPoints';
 
 const getColor = ({ theme }) => theme.colors.primary.main;
 

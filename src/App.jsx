@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import GlobalStyles from "./styles/GlobalStyles";
-import ThemeProvider from "./styles/ThemeProvider";
+import GlobalStyles from './styles/GlobalStyles';
+import ThemeProvider from './styles/ThemeProvider';
 
-import Home from "./pages/Home";
+import Home from './pages/Home';
 
 function App() {
   return (

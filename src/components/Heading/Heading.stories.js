@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Heading from ".";
+import Heading from '.';
 
 const heading = {
-  title: "Components/Atoms/Heading",
+  title: 'Components/Atoms/Heading',
   component: Heading,
 };
 

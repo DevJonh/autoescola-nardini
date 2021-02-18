@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Grid from ".";
+import Grid from '.';
 
 const grid = {
-  title: "Components/Atoms/Grid",
+  title: 'Components/Atoms/Grid',
   component: Grid,
 };
 
@@ -17,13 +17,13 @@ const Box = styled.div`
 
 export const usage = () => (
   <Grid sm={2} md={3} lg={4} xl={5}>
-    <Box></Box>
-    <Box></Box>
-    <Box></Box>
-    <Box></Box>
-    <Box></Box>
-    <Box></Box>
-    <Box></Box>
-    <Box></Box>
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
   </Grid>
 );

@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import FeatureStyles, { IconRoot } from "./styles";
+import FeatureStyles, { IconRoot } from './styles';
 
 const Feature = ({ icon, title, children }) => (
   <FeatureStyles>
@@ -13,7 +13,7 @@ const Feature = ({ icon, title, children }) => (
 
 Feature.defaultProps = {
   icon: undefined,
-  title: "",
+  title: '',
   children: undefined,
 };
 

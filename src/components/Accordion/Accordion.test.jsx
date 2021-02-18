@@ -1,47 +1,47 @@
-import React from "react";
-import { render, screen } from "../../test-utils";
+import React from 'react';
+import { fireEvent } from '@testing-library/react';
+import { render, screen } from '../../test-utils';
 
-import Accordion from ".";
-import { fireEvent } from "@testing-library/react";
+import Accordion from '.';
 
-const text = "My children text";
-const title = "My title";
+const text = 'My children text';
+const title = 'My title';
 
-test("render with title", () => {
-  render(<Accordion title={title}></Accordion>);
+test('render with title', () => {
+  render(<Accordion title={title} />);
 
   expect(screen.getByText(title)).toBeInTheDocument();
 });
 
-test("renders without children", () => {
+test('renders without children', () => {
   render(<Accordion>{text}</Accordion>);
 
   expect(screen.queryByText(text)).not.toBeInTheDocument();
 });
 
-test("triggers onChange when it is clicked", async () => {
+test('triggers onChange when it is clicked', async () => {
   const handleChange = jest.fn();
 
-  render(<Accordion title={title} onChange={handleChange}></Accordion>);
+  render(<Accordion title={title} onChange={handleChange} />);
 
   await fireEvent.click(screen.getByText(title));
 
   expect(handleChange).toBeCalledTimes(1);
 });
 
-describe("when is controlled", () => {
-  describe("when starts opened", () => {
-    test("renders with children", () => {
+describe('when is controlled', () => {
+  describe('when starts opened', () => {
+    test('renders with children', () => {
       render(<Accordion open>{text}</Accordion>);
 
       expect(screen.queryByText(text)).toBeInTheDocument();
     });
 
-    test("triggers onChange when it is clicked", async () => {
+    test('triggers onChange when it is clicked', async () => {
       const handleChange = jest.fn();
 
       render(
-        <Accordion onChange={handleChange} title={title} open></Accordion>
+        <Accordion onChange={handleChange} title={title} open />,
       );
 
       await fireEvent.click(screen.getByText(title));
@@ -49,24 +49,24 @@ describe("when is controlled", () => {
       expect(handleChange).toBeCalledTimes(1);
     });
 
-    test("hide children when open change false", () => {
+    test('hide children when open change false', () => {
       const { rerender } = render(
         <Accordion title={title} open>
           {text}
-        </Accordion>
+        </Accordion>,
       );
 
       rerender(
         <Accordion title={title} open={false}>
           {text}
-        </Accordion>
+        </Accordion>,
       );
 
       expect(screen.queryByText(text)).not.toBeInTheDocument();
     });
   });
-  describe("when starts closed", () => {
-    test("renders without children", () => {
+  describe('when starts closed', () => {
+    test('renders without children', () => {
       render(<Accordion open={false}>{text}</Accordion>);
 
       expect(screen.queryByText(text)).not.toBeInTheDocument();

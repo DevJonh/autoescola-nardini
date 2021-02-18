@@ -11,6 +11,9 @@
     "@testing-library/user-event": "^12.7.1",
     "babel-loader": "^8.1.0",
     "chromatic": "^5.6.2",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-react": "^7.22.0",
     "init": "^0.1.2",
     "jest-styled-components": "^7.0.3",
     "prop-types": "^15.7.2",
@@ -26,11 +29,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "yarn test -- --coverage --watchAll=false",
+    "coverage": "yarn test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "chromatic --project-token 3128773d1729"
+    "chromatic": "chromatic --project-token 3128773d1729",
+    "lintjs": "eslint src/**/*.js",
+    "lintjsx": "eslint src/**/*.jsx"
   },
   "jest": {
     "collectCoverageFrom": [

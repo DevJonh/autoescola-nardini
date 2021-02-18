@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 import {
   FaPhone,
   FaBuilding,
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
-import Container from "../Container";
-import Grid from "../Grid";
-import Heading from "../Heading";
-import { FooterLink, Root } from "./styles";
+import Container from '../Container';
+import Grid from '../Grid';
+import Heading from '../Heading';
+import { FooterLink, Root } from './styles';
 
 const Footer = () => (
   <Root>
