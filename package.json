@@ -1,6 +1,6 @@
 {
   "name": "autoescola-nardini",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@storybook/addon-docs": "^6.1.18",
@@ -33,7 +33,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "chromatic --project-token 3128773d1729",
+    "chromatic": "chromatic --exit-zero-on-changes ",
     "lintjs": "eslint src/**/*.js",
     "lintjsx": "eslint src/**/*.jsx"
   },
