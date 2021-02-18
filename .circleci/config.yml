@@ -16,6 +16,7 @@ jobs:
           pkg-manager: yarn
       - run: yarn lintjs
       - run: yarn lintjsx
+      - run: yarn coverage
 
 workflows:
   ci:
