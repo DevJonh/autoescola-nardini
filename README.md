@@ -1,8 +1,8 @@
 # Auto Escola Nardini
 
-![CircleCI](https://img.shields.io/circleci/build/github/DevJhon/autoescola-nardini)
+![CircleCI](https://img.shields.io/circleci/build/github/DevJonh/autoescola-nardini)
 
-![Codecov](https://img.shields.io/codecov/c/github/DevJhon/autoescola-nardini)
+![Codecov](https://img.shields.io/codecov/c/github/DevJonh/autoescola-nardini)
 
 Projeto criado no curso [React Profissional](http://www.nardiniacademy.com)
 
