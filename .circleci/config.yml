@@ -35,7 +35,7 @@ workflows:
       - tests
       - versioning:
           filters:
-            branchs:
+            branches:
               ignore: master
             tags:
               ignore: /.*/
