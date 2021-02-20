@@ -16,10 +16,9 @@ import Speed from "../../assets/svg/Speed";
 import { PinnedList, PinnedItem } from "./styles";
 import BreadCrumb from "../../components/BreadCrumb";
 
-const ProductDetails = ({ match }) => {
+const ProductDetails = () => {
   useScrollTop();
 
-  console.log(match);
   return (
     <>
       <Hero image={bg}>
