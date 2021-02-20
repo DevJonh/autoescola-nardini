@@ -30,12 +30,14 @@ exports[`match snapshot 1`] = `
     data-styled="active"
     data-styled-version="5.2.1"
   >
-    html{font-family:"Poppins",sans-serif;font-weight:300;font-size:100%;color:#212121;box-sizing:border-box;margin:0;padding:0;}
+    html,body{font-family:"Poppins",sans-serif;font-weight:300;font-size:100%;color:#212121;box-sizing:border-box;margin:0;padding:0;}
     *,*::before,*::after{box-sizing:inherit;}
-    *{margin:0;padding:0;box-sizing:border-box;}
+    *{box-sizing:border-box;}
     body.sb-show-main.sb-main-padded{padding:0;}
+    a,button{font-family:"Poppins",sans-serif;}
     h1,h2,h3,h4,h5,h6{line-height:1.3em;font-weight:700;-webkit-letter-spacing:2px;-moz-letter-spacing:2px;-ms-letter-spacing:2px;letter-spacing:2px;}
     h1 strong,h2 strong,h3 strong,h4 strong,h5 strong,h6 strong{color:#ffc107;}
+    p{margin:16px 0;}
     h1{font-size:2.5rem;}
     @media (min-width:992px){h1{font-size:3.75rem;}}
     h2{font-size:2rem;}
