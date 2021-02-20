@@ -9,6 +9,10 @@ export const CardRoot = styled.div`
 
 export const Body = styled.div`
   padding: 16px;
+
+  h6 {
+    margin: 16px 0;
+  }
 `;
 
 export const Media = styled.div`
@@ -26,4 +30,7 @@ export const MediaDescription = styled.div`
   width: 100%;
   position: absolute;
   bottom: 0;
+  h5 {
+    margin: 0;
+  }
 `;
