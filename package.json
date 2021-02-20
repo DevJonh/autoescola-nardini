@@ -35,7 +35,8 @@
     "build-storybook": "build-storybook -s public",
     "chromatic": "chromatic --exit-zero-on-changes ",
     "lintjs": "eslint src/**/*.js",
-    "lintjsx": "eslint src/**/*.jsx"
+    "lintjsx": "eslint src/**/*.jsx",
+    "svg": "svgr --icon --replace-attr-values '#ffc107=currentColor' -d src/assets/svg/"
   },
   "jest": {
     "collectCoverageFrom": [
