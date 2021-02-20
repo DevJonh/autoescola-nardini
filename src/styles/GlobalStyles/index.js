@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { createGlobalStyle } from 'styled-components';
-import { Helmet } from 'react-helmet';
+import { createGlobalStyle } from "styled-components";
+import { Helmet } from "react-helmet";
 
-import { breakAt, BreakPoints } from '../BreakPoints';
+import { breakAt, BreakPoints } from "../BreakPoints";
 
 const GlobalStyle = createGlobalStyle`
   html{
@@ -21,8 +21,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
   
@@ -38,6 +36,10 @@ const GlobalStyle = createGlobalStyle`
     strong{
       color: ${({ theme }) => theme.colors.primary.main};
     }
+  }
+
+  p{
+    margin: 16px 0
   }
 
   h1{

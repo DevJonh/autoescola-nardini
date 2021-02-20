@@ -12,6 +12,9 @@ export const StyledCallout = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  h6 {
+    margin: 16px 0;
+  }
 `;
 
 export const StyledCalloutBody = styled.div`
