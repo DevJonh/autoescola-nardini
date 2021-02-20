@@ -6,11 +6,52 @@ import Heading from "../../components/Heading";
 import Section from "../../components/Section";
 import Grid from "../../components/Grid";
 import Footer from "../../components/Footer";
+import Card, { CardMedia, CardMediaDescription } from "../../components/Card";
 
 import bg from "../../assets/bg-car.jpg";
 import AboutImage from "../../assets/svg/About";
 
+import instructor1 from "../../assets/instructors/inst1.jpg";
+import instructor2 from "../../assets/instructors/inst2.jpg";
+import instructor3 from "../../assets/instructors/inst3.jpg";
+import instructor4 from "../../assets/instructors/inst4.jpg";
+import instructor5 from "../../assets/instructors/inst5.jpg";
+import instructor6 from "../../assets/instructors/inst6.jpg";
+
 import { ImageContainer } from "./styles";
+
+const instructors = [
+  {
+    id: 1,
+    name: "Thor",
+    avatar: instructor1,
+  },
+  {
+    id: 2,
+    name: "Milla",
+    avatar: instructor2,
+  },
+  {
+    id: 3,
+    name: "Bolinha",
+    avatar: instructor3,
+  },
+  {
+    id: 4,
+    name: "Mike",
+    avatar: instructor4,
+  },
+  {
+    id: 5,
+    name: "Emmy",
+    avatar: instructor5,
+  },
+  {
+    id: 6,
+    name: "Bob",
+    avatar: instructor6,
+  },
+];
 
 const About = () => (
   <>
@@ -92,6 +133,17 @@ const About = () => (
       <Heading>
         <h2>Conheça nossos professores</h2>
       </Heading>
+      <Grid sm={2} md={3} lg={4}>
+        {instructors.map((instructor) => (
+          <Card key={instructor.id}>
+            <CardMedia img={instructor.avatar}>
+              <CardMediaDescription>
+                <h5>{instructor.name}</h5>
+              </CardMediaDescription>
+            </CardMedia>
+          </Card>
+        ))}
+      </Grid>
     </Section>
     <Footer />
   </>
