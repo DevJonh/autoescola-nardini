@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import { breakAt, BreakPoints } from "../BreakPoints";
 
 const GlobalStyle = createGlobalStyle`
-  html{
+  html, body{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 100%;
@@ -26,6 +26,10 @@ const GlobalStyle = createGlobalStyle`
   
   body.sb-show-main.sb-main-padded{
     padding: 0
+  }
+
+  a, button{
+    font-family: "Poppins", sans-serif;
   }
 
   h1,h2,h3,h4,h5,h6{

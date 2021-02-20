@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-import Grid from '../Grid';
-import Heading from '../Heading';
-import Button from '../Button';
-import Card, { CardBody, CardMedia } from '../Card';
+import Grid from "../Grid";
+import Heading from "../Heading";
+import Button from "../Button";
+import Card, { CardBody, CardMedia } from "../Card";
 
 const ButtonContainer = styled.div`
   margin-top: 40px;
@@ -30,7 +31,15 @@ const ProductGrid = ({ products }) => {
                 </Heading>
                 <p>{product.summary}</p>
                 <div>
-                  <Button color="primary" variant="link">
+                  <Button
+                    as={Link}
+                    to={{
+                      pathname: `/servicos/${i}`,
+                      state: { productAtual: filteredProducts[i] },
+                    }}
+                    color="primary"
+                    variant="link"
+                  >
                     Saiba mais
                   </Button>
                 </div>
@@ -60,7 +69,7 @@ ProductGrid.protoTypes = {
       img: PropTypes.string,
       title: PropTypes.string,
       summary: PropTypes.string,
-    }),
+    })
   ),
 };
 
