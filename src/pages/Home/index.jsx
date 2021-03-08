@@ -1,52 +1,51 @@
-import React from 'react';
+import React from "react";
 // import PropTypes from "prop-types";
-import {
-  FaCar, FaKey, FaAccessibleIcon, FaMapMarkedAlt,
-} from 'react-icons/fa';
+import { FaCar, FaKey, FaAccessibleIcon, FaMapMarkedAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-import Hero from '../../components/Hero';
-import Heading from '../../components/Heading';
-import Button from '../../components/Button';
-import Grid from '../../components/Grid';
-import Feature from '../../components/Feature';
-import Footer from '../../components/Footer';
-import ProductGrid from '../../components/ProductGrid';
-import Accordion from '../../components/Accordion';
+import Hero from "../../components/Hero";
+import Heading from "../../components/Heading";
+import Button from "../../components/Button";
+import Grid from "../../components/Grid";
+import Feature from "../../components/Feature";
+import Footer from "../../components/Footer";
+import ProductGrid from "../../components/ProductGrid";
+import Accordion from "../../components/Accordion";
 
-import bgCar from '../../assets/bg-car.jpg';
-import videoCar from '../../assets/Car.mp4';
-import Section from '../../components/Section';
-import AccordionGroup from '../../components/AccordionGroup';
+import bgCar from "../../assets/bg-car.jpg";
+import videoCar from "../../assets/Car.mp4";
+import Section from "../../components/Section";
+import AccordionGroup from "../../components/AccordionGroup";
 
 const products = [
   {
-    title: '1ª Habilitação Carro e Moto',
+    title: "1ª Habilitação Carro e Moto",
     summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
     img: bgCar,
   },
   {
-    title: '1ª Habilitação Carro',
+    title: "1ª Habilitação Carro",
     summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
     img: bgCar,
   },
   {
-    title: '1ª Habilitação Moto',
+    title: "1ª Habilitação Moto",
     summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
     img: bgCar,
   },
   {
-    title: 'Mudança de Categoria',
+    title: "Mudança de Categoria",
     summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
     img: bgCar,
   },
   {
-    title: 'Aulas Avulsas',
+    title: "Aulas Avulsas",
     summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maximedolores",
     img: bgCar,
   },
 ];
@@ -56,12 +55,8 @@ const Home = () => (
     <Hero image={bgCar}>
       <Heading>
         <h1>
-          Ganhe sua
-          {' '}
-          <strong>liberdade</strong>
-          <br />
-          {' '}
-          de ir e vir
+          Ganhe sua <strong>liberdade</strong>
+          <br /> de ir e vir
         </h1>
       </Heading>
       <ul>
@@ -109,11 +104,13 @@ const Home = () => (
           </p>
 
           <div>
-            <Button color="primary">Saiba mais</Button>
+            <Button as={Link} to="/sobre" color="primary">
+              Saiba mais
+            </Button>
           </div>
         </div>
         <div>
-          <video src={videoCar} width="100%" autoPlay loop muted />
+          <video src={videoCar} width="100%" autoPlay playInline loop muted />
         </div>
       </Grid>
     </Section>

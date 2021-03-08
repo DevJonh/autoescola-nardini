@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import Card, { CardBody, CardMedia } from '.';
-import Section from '../Section';
-import Heading from '../Heading';
-import Button from '../Button';
+import Card, { CardBody, CardMedia, CardMediaDescription } from ".";
+import Section from "../Section";
+import Heading from "../Heading";
+import Button from "../Button";
 
-import img from '../../stories/assets/bg-car.jpg';
+import img from "../../stories/assets/bg-car.jpg";
 
 const card = {
-  title: 'Components/Atoms/Card',
+  title: "Components/Atoms/Card",
   component: Card,
-  subcomponents: { CardMedia, CardBody },
+  subcomponents: { CardMedia, CardBody, CardMediaDescription },
 };
 
 export default card;
@@ -54,6 +54,18 @@ export const withMedia = () => (
           </Button>
         </div>
       </CardBody>
+    </Card>
+  </Section>
+);
+
+export const onlyMedia = () => (
+  <Section inverse>
+    <Card>
+      <CardMedia img={img}>
+        <CardMediaDescription>
+          <h5>Descrição da Imagem</h5>
+        </CardMediaDescription>
+      </CardMedia>
     </Card>
   </Section>
 );

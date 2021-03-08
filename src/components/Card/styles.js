@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CardRoot = styled.div`
   background-color: #fff;
@@ -9,6 +9,10 @@ export const CardRoot = styled.div`
 
 export const Body = styled.div`
   padding: 16px;
+
+  h6 {
+    margin: 16px 0;
+  }
 `;
 
 export const Media = styled.div`
@@ -16,4 +20,17 @@ export const Media = styled.div`
   background-position: center center;
   background-size: cover;
   height: 270px;
+  position: relative;
+`;
+
+export const MediaDescription = styled.div`
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 8px 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  h5 {
+    margin: 0;
+  }
 `;

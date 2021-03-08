@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import { createGlobalStyle } from 'styled-components';
-import { Helmet } from 'react-helmet';
+import { createGlobalStyle } from "styled-components";
+import { Helmet } from "react-helmet";
 
-import { breakAt, BreakPoints } from '../BreakPoints';
+import { breakAt, BreakPoints } from "../BreakPoints";
 
 const GlobalStyle = createGlobalStyle`
-  html{
+  html, body{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 100%;
@@ -21,13 +21,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
   
   body.sb-show-main.sb-main-padded{
     padding: 0
+  }
+
+  a, button{
+    font-family: "Poppins", sans-serif;
   }
 
   h1,h2,h3,h4,h5,h6{
@@ -38,6 +40,10 @@ const GlobalStyle = createGlobalStyle`
     strong{
       color: ${({ theme }) => theme.colors.primary.main};
     }
+  }
+
+  p{
+    margin: 16px 0
   }
 
   h1{

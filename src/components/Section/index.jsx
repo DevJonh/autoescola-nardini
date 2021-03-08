@@ -1,17 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
-import Container from '../Container';
-import { breakAt, BreakPoints } from '../../styles/BreakPoints';
+import Container from "../Container";
+import { breakAt, BreakPoints } from "../../styles/BreakPoints";
 
 const Content = styled.div`
   padding: 40px 0;
-  background-color: ${({ inverse }) => inverse && '#f7f7f7'};
+  background-color: ${({ inverse }) => inverse && "#f7f7f7"};
 
-  h2 {
+  h2,
+  h4 {
     margin-top: 0;
   }
+
+  h4 {
+    margin-bottom: 32px;
+  }
+
   p {
     line-height: 26px;
   }

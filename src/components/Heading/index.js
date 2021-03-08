@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Heading = styled.div`
   h1,
@@ -21,10 +21,6 @@ const Heading = styled.div`
       height: 5px;
       width: 70px;
     }
-  }
-
-  h1 {
-    padding-bottom: 24px;
   }
 `;
 

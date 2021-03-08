@@ -29,10 +29,6 @@ exports[`match snapshot 1`] = `
   width: 70px;
 }
 
-.c0 h1 {
-  padding-bottom: 24px;
-}
-
 <div
     class="c0"
   >
